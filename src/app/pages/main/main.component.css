@@ -1,0 +1,336 @@
+body {
+    background-image: url('/assets/Images/Background.png'); /* Убедитесь, что путь правильный */
+    background-size: cover; /* Изображение будет покрывать всю страницу */
+    background-repeat: no-repeat; /* Изображение не будет повторяться */
+    background-position: center; /* Изображение будет центрировано */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 4vw; /* Уменьшение размера шрифта */
+    margin-bottom: -1vh;
+    margin: 0vh 1vw 1vh 1vw; /* Исправлено: значения разделены пробелами */
+  }
+  
+  .header {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .hello {
+    color: #0469C7; /* Установите цвет текста для HELLO */
+  }
+  
+  .username {
+    color: var(--tg-theme-text-color); /* Оставьте цвет текста для username */
+  }
+  
+  .hello, .nft-free {
+    font-size: 2vw; /* Уменьшение размера шрифта */
+    font-weight: bold;
+  }
+  
+  .action-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0vh; /* добавьте отступ, если нужно */
+    padding-bottom: 2vh;
+  }
+  
+  .referral-link, .upgrade {
+    font-size: 1.5vw;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5vh 0vw;
+    border: none;
+    border-radius: 4vw;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .referral-link {
+    background-color: #162731; /* Цвет фона */
+    border: 0.2vw solid #6BF200; /* Зеленый обводка */
+  }
+  
+  .upgrade {
+    background-color: #159C4B; /* Цвет фона */
+    opacity: 56%;
+    border: 0.2vw solid #6BF200; /* Зеленый обводка */
+  }
+  
+  .language-switch {
+    margin: 0 1vw; /* добавьте отступы между элементами */
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 2.5vw;
+  }
+  
+  .action-container > .referral-link, .action-container > .upgrade {
+    margin: 0; /* Убираем отступы от краев */
+  }
+  
+  .action-container > .language-switch {
+    margin: 0 2.5vw; /* Отступы только от EN */
+  }
+  
+  .fas.fa-qrcode {
+    margin-right: 1vw; /* Отступ справа от иконки */
+  }
+  
+  .balance-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vh;
+    font-size: 2vw; /* Уменьшение размера шрифта */
+    background-color: #0A3D6B; /* Цвет фона */
+    border-radius: 1vw;
+    margin-bottom: 2vh;
+  }
+  
+  .energy-balance, .total-balance {
+    width: 90vw;
+    padding: 0vh;
+    border-radius: 1vw;
+    text-align: center;
+  }
+  
+  .energy-balance {
+    background: linear-gradient(to bottom, #08D1FD, #72A506); /* Градиентный фон */
+    color: white;
+  }
+  
+  .total-balance {
+    background-color: #0A3D6B; /* Цвет фона */
+    color: white;
+  }
+  
+  .balance-title {
+    margin-top: 1vh;
+    font-weight: bold;
+  }
+  
+  .balance-value {
+    font-size: 3vw;
+  }
+  
+  .balance-value .fas.fa-bolt {
+    color: #ffcc00; /* Цвет иконки молнии */
+    margin-right: 0.5vw; /* Отступ справа от иконки */
+  }
+  
+  .balance-amount {
+    font-size: 3.5vw;
+    color: #6BF200; /* Зеленый цвет */
+    margin: 0.5vh 0 0 0;
+  }
+  
+  .airdrop {
+    display: inline-block;
+    padding: 0.2vh 0.5vw;
+    background-color: #00ff00; /* Зеленый фон */
+    color: #1d2b34; /* Цвет текста */
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    margin-left: 0.5vw;
+  }
+  
+  .autoclicker-container {
+    background-color: #0A3D6B;
+    border-radius: 1vw;
+    padding: 0vh;
+    width: 100%;
+    max-width: 90vw;
+    text-align: center;
+    color: white;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+  }
+  
+  .autoclicker {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .autoclicker span {
+    font-weight: bold;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-top: 1vh;
+  }
+  
+  .buttons {
+    display: flex;
+    width: 100%;
+  }
+  
+  .on, .off {
+    margin-left: 1vw;
+    flex: 1;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 0.5vw;
+    color: #1d2b34;
+    padding: 0.5vh 1vw;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .off {
+    background-color: #ff0000;
+    margin-left: 1vw; /* Добавляем отступ между кнопками */
+  }
+  
+  .leaderboard {
+    margin-top: 1vh;
+    margin-right: 1vw;
+    display: flex;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .leaderboard i {
+    margin-right: 0.5vw;
+  }
+  
+  .sonic-image img {
+    width: 80vw;
+    height: auto;
+    margin-bottom: 2vh;
+    margin-top: -5vh;
+  }
+  
+  .sonic-image {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .coins-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Чтобы клики проходили через контейнер */
+  }
+  
+  .coin {
+    position: absolute;
+    width: 20px; /* Размер монетки */
+    height: 20px; /* Размер монетки */
+    background-image: url('../../../assets/Images/coin.png'); /* Убедитесь, что путь правильный */
+    background-size: cover;
+    animation: fly 1s ease-out;
+  }
+  
+  @keyframes fly {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-50px); /* Высота подъема монетки */
+    }
+  }
+  
+  .promotion {
+    color: yellow;
+    font-weight: bold;
+    margin-bottom: 1vh;
+    margin-top: -8vh;
+    display: flex;
+    justify-content: flex-end; /* Выровнять по правому краю */
+    width: 100%;
+    text-align: right;
+  }
+  
+  .promotion i {
+    margin-left: 0.5vw;
+  }
+  
+  .progress-container {
+    width: 100%;
+    padding: 0.5vh;
+    box-sizing: border-box;
+  }
+  
+  .progress-bar {
+    background-color: #061A23;
+    border-radius: 1vw;
+    padding: 2%;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .progress-text {
+    font-weight: bold;
+  }
+  
+  .progress-bar .progress {
+    background-color: #333;
+    border-radius: 0.5vw;
+    overflow: hidden;
+    margin-top: 1vh;
+    height: 1.5vh;
+    width: 100%;
+  }
+  
+  .progress-bar .progress .progress-fill {
+    background: linear-gradient(to right, #6BF200, #FFD700);
+    height: 100%;
+    width: 50%; /* Пример заполнения прогресса */
+  }
+  
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #0A3D6B;
+    padding: 2vh 0;
+    border-radius: 1vw;
+    box-sizing: border-box;
+  }
+  
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  .footer-item i {
+    font-size: 4vw;
+    margin-bottom: 1vh;
+    color: yellow;
+  }
